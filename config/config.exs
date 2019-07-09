@@ -15,7 +15,8 @@ config :omg, OmgWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "3p76Nklj0F0ZrDxQPrQyRYoGdD/cpCag8W0+TWgYQR5nUcRETK9aOx28Gf8u47AT",
   render_errors: [view: OmgWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Omg.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: Omg.PubSub, adapter: Phoenix.PubSub.PG2],
+  live_view: [signing_salt: "eh/ScBV9GFlVLzB4VugcbdfXAhuWQ0+C"]
 
 # Configures Elixir's Logger
 config :logger, :console,
